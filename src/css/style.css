@@ -1,0 +1,8 @@
+#app-container {
+    margin-top: 1em;
+}
+
+canvas {
+    background-color: #333333;
+    width: 100%;
+}

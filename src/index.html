@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Langton's Ant</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css" integrity="sha256-d+mgRrjtsPCjrT7ltuB1sZ2VybUn1Xgdf8piVG/Va/k=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<section class="hero is-dark is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Langton&apos;s Ant
+            </h1>
+            <h2 class="subtitle">
+                A two-dimensional universal Turing machine with a very simple set of rules but complex emergent behavior.
+            </h2>
+        </div>
+    </div>
+</section>
+<section id="app-container">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-narrow">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">Simulation Options</p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <div class="field">
+                                <label class="label">Starting Orientation</label>
+                                <div class="control is-expanded">
+                                    <div class="select is-fullwidth">
+                                        <select>
+                                            <option>Up</option>
+                                            <option>Right</option>
+                                            <option>Down</option>
+                                            <option>Left</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Behavior</label>
+                                <div class="control is-expanded">
+                                    <div class="select is-fullwidth">
+                                        <select>
+                                            <option>RL</option>
+                                            <option>RLR</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Grid Size</label>
+                                <div class="control">
+                                    <div class="control">
+                                        <input class="input" type="number" placeholder="Squares" value="32">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-dark is-outlined">Simulate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <canvas class=""></canvas>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
